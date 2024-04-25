@@ -1,0 +1,21 @@
+.about-us {
+    padding: 0 40px 76px;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-us__title {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 44px;
+}
+
+
+.about-us__info {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    margin-left:auto;
+}
+

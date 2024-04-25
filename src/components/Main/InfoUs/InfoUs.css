@@ -1,0 +1,61 @@
+.about-us__group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 0;
+    gap: 20px;
+}
+
+.about-us__block {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+
+.about-us__button {
+    width: 36px;
+    height: 36px;
+    background: #0F0F17;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us__button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.about-us__button-img {
+    width: 17.41px;
+    height: 17.41px;
+}
+
+.about-us__text {
+    width: 580px;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.8px;
+}
+
+.about-us__text_open {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    margin-bottom: 30px;
+}
+
+.about-us__subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26.4px;
+    text-transform: uppercase;
+    margin: 0;
+}

@@ -1,0 +1,22 @@
+.news {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 40px;
+    gap: 40px;
+    justify-content: center;
+}
+
+.news__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+
+.news__cards {
+    display:  grid;
+    grid-template-columns: repeat(auto-fit, 440px);
+    justify-content: center;
+    gap: 40px 20px;
+}

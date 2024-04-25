@@ -1,0 +1,10 @@
+:root {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #0F0F17;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+    color: #FFFFFF;
+}
