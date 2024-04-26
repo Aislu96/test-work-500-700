@@ -38,7 +38,6 @@ INPUT[type="text"]:focus {
 }
 
 
-
 .newsletter__button {
     font-weight: 500;
     font-size: 16px;
@@ -55,6 +54,11 @@ INPUT[type="text"]:focus {
     background-color: #FFFFFF;
 }
 
+.newsletter__button:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 .newsletter__form {
     width: 100%;
     display: grid;
@@ -62,7 +66,6 @@ INPUT[type="text"]:focus {
     justify-content: center;
     gap: 20px;
 }
-
 
 
 .newsletter__input {
@@ -123,4 +126,10 @@ label > div {
 label input:checked ~ div {
     background-image: url("../../../images/Vector.svg");
     background-color: #FB8627;
+}
+
+
+label :hover {
+    opacity: 0.5;
+    cursor: pointer;
 }

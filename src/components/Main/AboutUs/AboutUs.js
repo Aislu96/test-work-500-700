@@ -1,6 +1,5 @@
 import InfoUs from "../InfoUs/InfoUs";
 import "./AboutUs.css";
-import {useState} from "react";
 
 function AboutUs() {
     return (
