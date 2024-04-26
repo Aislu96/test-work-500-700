@@ -9,6 +9,7 @@ function App() {
             {/*<img src={l} className="image"/>*/}
             <Header />
             <Main />
+            <Fotter />
         </>
     );
 }
