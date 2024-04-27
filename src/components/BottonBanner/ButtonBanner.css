@@ -1,0 +1,46 @@
+.about-project__group {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.about-project__arrow-btn {
+    width: 52px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    border: none;
+    background-color: #0F0F17;
+}
+
+.about-project__arrow-btn:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.about-project__button-img {
+    width: 22.3px;
+    height: 22.3px;
+}
+
+
+.about-project__group_active {
+    display: none;
+}
+@media screen and (max-width: 500px) {
+    .about-project__arrow-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .about-project__button-img {
+        width: 17.16px;
+        height: 17.16px;
+    }
+    .about-project__group_active {
+        padding-left: 10px;
+        display: flex;
+    }
+}
