@@ -1,4 +1,4 @@
-import logo from "../../images/logo.svg";
+import logo from "../../images/logoFooter.svg";
 import youtube from "../../images/youtube.svg";
 import telegram from "../../images/telegram.svg";
 import vk from "../../images/vk.svg";

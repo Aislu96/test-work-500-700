@@ -87,3 +87,30 @@
     opacity: 0.5;
     cursor: pointer;
 }
+
+
+@media screen and (max-width: 800px) {
+    .footer {
+        padding: 30px 10px 40px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer__group {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .footer__logo {
+        width: 69.45px;
+        height: 82.63px;
+    }
+    .footer__info {
+        margin-top: 10px;
+    }
+
+    .footer__nav {
+        gap: 84px;
+    }
+}

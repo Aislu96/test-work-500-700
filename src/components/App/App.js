@@ -1,7 +1,7 @@
 import './App.css';
 import '../Header/Header'
 import Header from "../Header/Header";
-import l from "../../images/Mobile Menu.png";
+// import l from "../../images/Mobile 320.png";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
 import {useRef} from "react";
@@ -25,7 +25,7 @@ function App() {
             {/*<img src={l} className="image"/>*/}
             <Header handleClickButton={handleClickButton}/>
             <Main  ref={refs}/>
-            {/*<Footer handleClickButton={handleClickButton}/>*/}
+            <Footer handleClickButton={handleClickButton}/>
         </>
     );
 }
