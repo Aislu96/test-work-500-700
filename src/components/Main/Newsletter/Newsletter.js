@@ -1,7 +1,6 @@
 import "../Newsletter/Newsletter.css";
 import useFormValidation from "../../../hooks/useFormValidation.js";
-import React, {useState} from 'react';
-import vector from "../../../images/Vector.svg"
+import React from 'react';
 
 function Newsletter({ref}) {
     const {values, errors, handleChange, setValues, resetValidation, isValid} = useFormValidation({});
