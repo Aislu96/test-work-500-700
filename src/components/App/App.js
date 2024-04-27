@@ -5,6 +5,7 @@ import Header from "../Header/Header";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
 import {useRef} from "react";
+import Popup from "../Popup/Popup";
 function App() {
     const refs = {
         news: useRef(null),
@@ -26,6 +27,7 @@ function App() {
             <Header handleClickButton={handleClickButton}/>
             <Main  ref={refs}/>
             <Footer handleClickButton={handleClickButton}/>
+            <Popup />
         </>
     );
 }

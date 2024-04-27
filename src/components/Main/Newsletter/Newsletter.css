@@ -61,7 +61,7 @@ INPUT[type="email"]:focus {
 }
 
 .newsletter__button:hover {
-    opacity: 0.5;
+    background: linear-gradient(180deg, #FB8627 0%, #F5BEF6 100%);
     cursor: pointer;
 }
 
