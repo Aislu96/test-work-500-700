@@ -17,3 +17,39 @@
     width: 900px;
     margin-left: auto;
 }
+
+
+@media screen and (max-width: 1100px) {
+    .about-us {
+        flex-direction: column;
+        gap: 30px;
+        margin: 0 auto;
+    }
+
+    .about-us__title {
+        margin: 0;
+    }
+    .about-us__info {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .about-us__text {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .about-us {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 40px;
+    }
+    .about-us__info {
+        width: 100%;
+    }
+    .about-us__title {
+        font-size: 24px;
+        line-height: 26.8px;
+    }
+}

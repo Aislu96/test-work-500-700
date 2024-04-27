@@ -13,7 +13,6 @@
     border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
 
-
 .about-us__button {
     width: 36px;
     height: 36px;
@@ -58,4 +57,29 @@
     line-height: 26.4px;
     text-transform: uppercase;
     margin: 0;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .about-us__text {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about-us__subtitle {
+        font-size: 16px;
+        line-height: 17.6px;
+    }
+
+    .about-us__text {
+        width: 100%;
+    }
+    .about-us__group {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .about-us__text_open {
+        margin-bottom: 20px;
+    }
 }
