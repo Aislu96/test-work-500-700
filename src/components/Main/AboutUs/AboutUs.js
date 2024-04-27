@@ -1,9 +1,9 @@
 import InfoUs from "../InfoUs/InfoUs";
 import "./AboutUs.css";
 
-function AboutUs() {
+function AboutUs({ref}) {
     return (
-        <section className="about-us">
+        <section className="about-us" id='about' ref={ref}>
             <h2 className="about-us__title">FAQ</h2>
             <div className="about-us__info">
                 <InfoUs subtitle={"Какие услуги предоставляет ваша студия?"}

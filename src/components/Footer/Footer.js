@@ -4,7 +4,7 @@ import telegram from "../../images/telegram.svg";
 import vk from "../../images/vk.svg";
 import '../Footer/Footer.css';
 
-function Footer() {
+function Footer({handleClickButton}) {
     return (
         <footer className="footer">
             <div className="footer__group">
@@ -26,16 +26,16 @@ function Footer() {
                     <li className="footer__nav-link">
                         <p className='footer__nav-text'>Проекты</p>
                     </li>
-                    <li className="footer__nav-link">
-                        <p className='footer__nav-text'>Новости</p>
+                    <li className="footer__nav-link" onClick={handleClickButton}>
+                        <a className='footer__nav-text' href='#news' name="news">Новости</a>
                     </li>
                 </ul>
                 <ul className="footer__nav-list">
-                    <li className="footer__nav-link">
-                        <p className='footer__nav-text'>FAQ</p>
+                    <li className="footer__nav-link" onClick={handleClickButton}>
+                        <a className='footer__nav-text' href='#about' name="about">FAQ</a>
                     </li>
-                    <li className="footer__nav-link">
-                        <p className='footer__nav-text'>Контакты</p>
+                    <li className="footer__nav-link" onClick={handleClickButton}>
+                        <a className='footer__nav-text' href='#newsletter' name="newsletter">Контакты</a>
                     </li>
                 </ul>
             </nav>

@@ -31,3 +31,31 @@
     line-height: 20.8px;
     margin: 0;
 }
+
+
+@media screen and (max-width: 500px){
+    .card {
+        gap: 0;
+    }
+     .card__title {
+        font-size: 20px;
+        line-height: 22px;
+         margin-bottom: 10px;
+         padding-left: 10px;
+         padding-right: 10px;
+    }
+    .card__img {
+        margin-bottom: 20px;
+    }
+    .card__subtitle {
+        margin-bottom: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .card__data {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 30px;
+    }
+
+}

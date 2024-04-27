@@ -3,6 +3,14 @@ INPUT[type="text"]:focus {
     opacity: 1;
 }
 
+INPUT[type="data"]:focus {
+    opacity: 1;
+}
+
+INPUT[type="email"]:focus {
+    opacity: 1;
+}
+
 .newsletter {
     padding: 80px 40px 78px;
     background-color: #FFFFFF;

@@ -3,7 +3,7 @@ import useFormValidation from "../../../hooks/useFormValidation.js";
 import React, {useState} from 'react';
 import vector from "../../../images/Vector.svg"
 
-function Newsletter() {
+function Newsletter({ref}) {
     const {values, errors, handleChange, setValues, resetValidation, isValid} = useFormValidation({});
     React.useEffect(() => {
         resetValidation();
@@ -17,7 +17,7 @@ function Newsletter() {
     }
 
     return (
-        <section className="newsletter">
+        <section className="newsletter" id='newsletter' ref={ref}>
             <div className="newsletter__block">
                 <h2 className="newsletter__title">Подпишись на рассылку</h2>
                 <p className="newsletter__subtitle">Отправляем анонсы новых статей, выпусков и трансляций</p>

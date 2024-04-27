@@ -11,11 +11,9 @@
     line-height: 44px;
 }
 
-
 .about-us__info {
     display: flex;
     flex-direction: column;
     width: 900px;
-    margin-left:auto;
+    margin-left: auto;
 }
-
