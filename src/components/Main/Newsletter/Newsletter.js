@@ -38,9 +38,9 @@ function Newsletter({ref}) {
                        value={values.time || ''} required/>
                 <div className="newsletter__group">
                     <div className="newsletter__checkbox">
-                        <label htmlFor="check">
-                            <input type="checkbox" id="check"/>
-                                <div></div>
+                        <label htmlFor="newsletter__check" className="newsletter__label">
+                            <input type="checkbox" className="newsletter__input-check" id="newsletter__check"/>
+                                <div className="newsletter__input-div"></div>
                         </label>
                         <p className="newsletter__text">Я согласен (-а) на обработку персональных данных</p>
                     </div>

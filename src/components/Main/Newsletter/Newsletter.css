@@ -111,15 +111,15 @@ INPUT[type="email"]:focus {
     gap: 10px;
 }
 
-label {
+.newsletter__label {
     display: inline-block;
 }
 
-label > input {
+.newsletter__input-check {
     display: none;
 }
 
-label > div {
+.newsletter__input-div {
     display: block;
     width: 16px;
     height: 16px;
@@ -129,13 +129,13 @@ label > div {
     border: 1px solid #FB8627;;
 }
 
-label input:checked ~ div {
+.newsletter__label .newsletter__input-check:checked ~ .newsletter__input-div  {
     background-image: url("../../../images/Vector.svg");
     background-color: #FB8627;
 }
 
 
-label :hover {
+.newsletter__label :hover {
     opacity: 0.5;
     cursor: pointer;
 }

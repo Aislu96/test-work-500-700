@@ -73,7 +73,7 @@
     width: 100%;
     padding: 15px;
     border: 1px solid #0F0F17;
-    border-radius: 20px;
+    border-radius: 10px;
     box-sizing: border-box;
     color: #0F0F17;
     font-weight: 400;
@@ -82,7 +82,7 @@
     opacity: 0.5;
 }
 
-form input:first-child {
+.popup__form .popup__input:first-child {
     margin-bottom: 20px;
 }
 
@@ -94,15 +94,15 @@ form input:first-child {
     gap: 10px;
 }
 
-label {
+.popup__label {
     display: inline-block;
 }
 
-label > input {
+.popup__input-check {
     display: none;
 }
 
-label > div {
+.popup__input-div {
     display: block;
     width: 16px;
     height: 16px;
@@ -112,13 +112,13 @@ label > div {
     border: 1px solid #FB8627;;
 }
 
-label input:checked ~ div {
+.popup__label .popup__input-check:checked ~ .popup__input-div {
     background-image: url("../../images/Vector.svg");
     background-color: #FB8627;
 }
 
 
-label :hover {
+.popup__label :hover {
     opacity: 0.5;
     cursor: pointer;
 }
@@ -149,15 +149,30 @@ label :hover {
     background-color: #FFFFFF;
 }
 
-.newsletter__button:hover {
+.popup__button:hover {
     background: linear-gradient(180deg, #FB8627 0%, #F5BEF6 100%);
     cursor: pointer;
 }
 
+.popup__button-img {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: none;
+}
 
-@media screen and (max-width: 400px) {
+.popup__button-img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
     .popup__body {
-        max-width: 568px;
+        max-width: 320px;
+        max-height: 568px;
         border-radius: 0;
         padding: 80px 20px 212px;
         gap: 20px;
@@ -177,8 +192,13 @@ label :hover {
         font-size: 16px;
         line-height: 20.8px;
     }
-    form input:first-child {
+
+    .popup__form .popup__input:first-child{
         margin-bottom: 10px;
     }
 
+    .popup__button-img {
+        width: 30px;
+        height: 30px;
+    }
 }

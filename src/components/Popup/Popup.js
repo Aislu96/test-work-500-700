@@ -3,8 +3,7 @@ import useFormValidation from "../../hooks/useFormValidation";
 import './Popup.css';
 import cross from "../../images/cross.svg";
 
-function Popup() {
-
+function Popup({popup, onClickPopupOpen, onClickOverlay}) {
     const {values, errors, handleChange, setValues, resetValidation, isValid} = useFormValidation({});
     React.useEffect(() => {
         resetValidation();
@@ -18,11 +17,11 @@ function Popup() {
     }
 
     return (
-        <div className="popup popup_opened">
+        <div className={`popup  ${popup? `popup_opened` : ""}`}   onClick={onClickOverlay}>
             <div className="popup__body">
                 <div className="popup__group">
                     <h2 className="popup__title">СВЯЗАТЬСЯ С НАМИ</h2>
-                    <img src={cross} alt="Картинка крестика" className="popup__img"/>
+                    <button className="popup__button-img" onClick={() => onClickPopupOpen(!popup)}><img src={cross} alt="Картинка крестика" className="popup__img"/></button>
                 </div>
                 <form className="popup__form" name="form__popup" onSubmit={handleSubmit}>
                     <input name="text" className="popup__input" type="name" placeholder="Имя"
@@ -34,9 +33,9 @@ function Popup() {
                            maxLength="11" onChange={handleChange} value={values.phone || ''} required/>
                     <div className="popup__block">
                         <div className="popup__checkbox">
-                            <label htmlFor="check">
-                                <input type="checkbox" id="check"/>
-                                <div></div>
+                            <label htmlFor="popup__check" className="popup__label">
+                                <input type="checkbox" id="popup__check" className="popup__input-check"/>
+                                <div className="popup__input-div"></div>
                             </label>
                             <p className="popup__text">Я согласен (-а) на обработку персональных данных</p>
                         </div>
