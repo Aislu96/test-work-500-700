@@ -55,12 +55,31 @@ INPUT[type="email"]:focus {
     width: 145px;
     height: 45px;
     border-radius: 40px;
-    border: 1px solid;
+    border: none;
     color: #0F0F17;
     background-color: #FFFFFF;
+    background-image: linear-gradient(180deg, #FB8627 0%, #F5BEF6 100%);
+    transition: 500ms;
 }
 
-.newsletter__button:hover {
+.newsletter__button:after {
+    width: 141px;
+    height: 41px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: 'Подписаться';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.8px;
+    color: #0F0F17;
+    border-radius: 40px;
+    background-color: #FFFFFF;
+    transition: 500ms;
+}
+
+.newsletter__button:hover:after {
     background: linear-gradient(180deg, #FB8627 0%, #F5BEF6 100%);
     cursor: pointer;
 }

@@ -1,5 +1,4 @@
 import ButtonArrow from "../../ButtonArrow/ButtonArrow";
-import NavInfo from "../NavInfo/NavInfo";
 
 function Nav({handleClickButton, acor, openAcor, menu, nameClass, popup, onClickPopupOpen}) {
     return (

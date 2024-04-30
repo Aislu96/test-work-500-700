@@ -1,7 +1,6 @@
 import './App.css';
 import '../Header/Header'
 import Header from "../Header/Header";
-import l from "../../images/Pop-up Mobile.png";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
 import {useRef, useState} from "react";
@@ -30,7 +29,6 @@ function App() {
 
     return (
         <>
-            {/*<img src={l} className="image"/>*/}
             <Header onClickPopupOpen={setIsPopupOpen} handleClickButton={handleClickButton} popup={isPopupOpen}/>
             <Main  ref={refs}/>
             <Footer handleClickButton={handleClickButton}/>

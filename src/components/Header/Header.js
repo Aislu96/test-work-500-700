@@ -1,7 +1,6 @@
 import logo from "../../images/logo.svg";
 import './Header.css'
 import {useEffect, useState} from "react";
-import ButtonArrow from "../ButtonArrow/ButtonArrow";
 import Menu from "./Menu/Menu";
 import Nav from "./Nav/Nav";
 import NavInfo from "./NavInfo/NavInfo";
@@ -18,7 +17,7 @@ function Header({handleClickButton, onClickPopupOpen, popup}) {
 
     return (
         <>
-        <header className="header">
+        <header className={popup ? "header" : "header header__position"}>
             <div className={acorOpen ? "header__block header__block_active" : "header__block"}>
                 <img className="header__logo" src={logo} alt="Логотип проекта"/>
                 <Menu isSetMenu={setMenu} menu={menu} />
