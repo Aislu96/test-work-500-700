@@ -18,7 +18,7 @@ function Header({handleClickButton, onClickPopupOpen, popup}) {
 
     return (
         <>
-        <header className="header">
+        <header className={popup ? "header" : "header header__position"}>
             <div className={acorOpen ? "header__block header__block_active" : "header__block"}>
                 <img className="header__logo" src={logo} alt="Логотип проекта"/>
                 <Menu isSetMenu={setMenu} menu={menu} />
