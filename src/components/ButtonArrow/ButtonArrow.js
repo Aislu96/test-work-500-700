@@ -3,12 +3,12 @@ import arrowUp from "../../images/arrowUp.svg";
 import {useState} from "react";
 import NavInfo from "../Header/NavInfo/NavInfo";
 
-function ButtonArrow({text, popup, openPopup, menu}) {
+function ButtonArrow({text, acor, openAcor, menu}) {
     const [arrowButton, setArrowClick] = useState(false);
 
     function handleArrowClick() {
         setArrowClick(!arrowButton);
-        openPopup(!popup)
+        openAcor(!acor)
     }
 
     return (
@@ -24,7 +24,7 @@ function ButtonArrow({text, popup, openPopup, menu}) {
                 </button>
             }
         </li>
-    {popup && arrowButton && menu && <NavInfo />}
+    {acor && arrowButton && menu && <NavInfo />}
         </>
     )
 }

@@ -1,8 +1,10 @@
 import "../Newsletter/Newsletter.css";
 import useFormValidation from "../../../hooks/useFormValidation.js";
 import React from 'react';
+import { useMask } from '@react-input/mask';
 
 function Newsletter({ref}) {
+    const inputRef = useMask({ mask: '+7 (___) ___-__-__', replacement: { _: /\d/ } });
     const {values, errors, handleChange, setValues, resetValidation, isValid} = useFormValidation({});
     React.useEffect(() => {
         resetValidation();
@@ -28,19 +30,17 @@ function Newsletter({ref}) {
                        className="newsletter__input"
                        name="data"
                        value={values.data || ''} required/>
-                <input type="text"
+                <input type="text" ref={inputRef}
                        className="newsletter__input"
-                       name="phone" placeholder="Телефон"
-                       minLength="11"
-                       maxLength="11" onChange={handleChange} value={values.phone || ''} required/>
+                       name="phone" placeholder="Телефон" onChange={handleChange} value={values.phone || ''} required/>
                 <input type="text" placeholder="Время (например, 10:00)" onChange={handleChange} name="time"
                        className="newsletter__input"
                        value={values.time || ''} required/>
                 <div className="newsletter__group">
                     <div className="newsletter__checkbox">
-                        <label htmlFor="check">
-                            <input type="checkbox" id="check"/>
-                                <div></div>
+                        <label htmlFor="newsletter__check" className="newsletter__label">
+                            <input type="checkbox" className="newsletter__input-check" id="newsletter__check"/>
+                                <div className="newsletter__input-div"></div>
                         </label>
                         <p className="newsletter__text">Я согласен (-а) на обработку персональных данных</p>
                     </div>

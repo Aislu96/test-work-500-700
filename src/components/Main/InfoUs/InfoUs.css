@@ -38,7 +38,6 @@
     height: 0;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
     font-weight: 400;
     font-size: 16px;
     line-height: 20.8px;

@@ -3,7 +3,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #FB8627;
+   background: linear-gradient(180deg, #FB8627 0%, #F5BEF6 100%);
+;
 }
 
 

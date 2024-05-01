@@ -55,13 +55,32 @@ INPUT[type="email"]:focus {
     width: 145px;
     height: 45px;
     border-radius: 40px;
-    border: 1px solid;
+    border: none;
     color: #0F0F17;
     background-color: #FFFFFF;
+    background-image: linear-gradient(180deg, #FB8627 0%, #F5BEF6 100%);
+    transition: 500ms;
 }
 
-.newsletter__button:hover {
-    opacity: 0.5;
+.newsletter__button:after {
+    width: 141px;
+    height: 41px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: 'Подписаться';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.8px;
+    color: #0F0F17;
+    border-radius: 40px;
+    background-color: #FFFFFF;
+    transition: 500ms;
+}
+
+.newsletter__button:hover:after {
+    background: linear-gradient(180deg, #FB8627 0%, #F5BEF6 100%);
     cursor: pointer;
 }
 
@@ -111,15 +130,15 @@ INPUT[type="email"]:focus {
     gap: 10px;
 }
 
-label {
+.newsletter__label {
     display: inline-block;
 }
 
-label > input {
+.newsletter__input-check {
     display: none;
 }
 
-label > div {
+.newsletter__input-div {
     display: block;
     width: 16px;
     height: 16px;
@@ -129,13 +148,13 @@ label > div {
     border: 1px solid #FB8627;;
 }
 
-label input:checked ~ div {
+.newsletter__label .newsletter__input-check:checked ~ .newsletter__input-div  {
     background-image: url("../../../images/Vector.svg");
     background-color: #FB8627;
 }
 
 
-label :hover {
+.newsletter__label :hover {
     opacity: 0.5;
     cursor: pointer;
 }
